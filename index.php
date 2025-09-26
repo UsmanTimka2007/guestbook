@@ -29,26 +29,31 @@ $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <form method = "POST">
-        <?php if (isset($error)): ?>
-            <p class="error"><?= $error ?></p>
-            <?php endif; ?>
-            <input type="text" name="name" placeholder="Name" required>
-            <textarea name="message" rows="4" placeholder="Your message" required></textarea>
-            <button type="submit"s>Submit</button>
-    </form>
-    <h3>Messages (<?= count($messages) ?>):</h3>
-    <?php if (empty($messages)): ?>
-        <p>No messages</p>
-    <?php else: ?>
-        <?php foreach ($messages as $msg): ?>
-            <div class="message">
-                <div class="name"><?= htmlspecialchars($msg['name']) ?></div>
-                <div><?= htmlspecialchars($msg['message']) ?></div>
-                <div class="date"><?= $msg['created_at'] ?></div>
-            </div><br>
-        <?php endforeach; ?>
-    <?php endif; ?> 
-           
+    <div class="container">
+        <h1>Guest book</h1>
+        <form method = "POST">
+            <?php if (isset($error)): ?>
+                <p class="error"><?= $error ?></p>
+                <?php endif; ?>
+                <input type="text" name="name" placeholder="Name" required>
+                <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+                <button type="submit"s>Submit</button>
+        </form>
+
+        <hr>
+
+        <h3>Messages (<?= count($messages) ?>):</h3>
+        <?php if (empty($messages)): ?>
+            <p>No messages</p>
+        <?php else: ?>
+            <?php foreach ($messages as $msg): ?>
+                <div class="message">
+                    <div class="name"><?= htmlspecialchars($msg['name']) ?></div>
+                    <div><?= htmlspecialchars($msg['message']) ?></div>
+                    <div class="date"><?= $msg['created_at'] ?></div>
+                </div><br>
+            <?php endforeach; ?>
+        <?php endif; ?> 
+    </div>       
 </body>
 </html>
