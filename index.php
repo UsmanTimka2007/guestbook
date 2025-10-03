@@ -36,6 +36,11 @@ $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <div class="name"><?= htmlspecialchars($msg['name']) ?></div>
                     <div><?= htmlspecialchars($msg['message']) ?></div>
                     <div class="date"><?= $msg['created_at'] ?></div>
+                    <a href="delete.php?id=<?= $msg['id'] ?>" 
+                        onclick="return confirm('Вы уверены, что хотите удалить это сообщение?')"
+                        style="color: red; margin-left: 15px; text-decoration: none;">
+                        Удалить
+                    </a>
                 </div><br>
             <?php endforeach; ?>
         <?php endif; ?> 
