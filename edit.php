@@ -26,53 +26,9 @@ if (!$message) {
 <head>
     <meta charset="UTF-8">
     <title>✏️ Редактировать сообщение</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 30px; }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h2 { text-align: center; color: #333; }
-        label { display: block; margin-top: 15px; font-weight: bold; }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .btn-save {
-            background-color: #28a745;
-            color: white;
-        }
-        .btn-save:hover {
-            background-color: #218838;
-        }
-        .btn-cancel {
-            background-color: #6c757d;
-            color: white;
-            text-decoration: none;
-            margin-left: 10px;
-        }
-        .btn-cancel:hover {
-            background-color: #5a6268;
-        }
-    </style>
+    <link rel="stylesheet" href="edit_style.css">
 </head>
+
 <body>
     <div class="container">
         <h2>Редактировать сообщение</h2>
