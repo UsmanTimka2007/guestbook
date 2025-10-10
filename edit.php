@@ -26,7 +26,7 @@ if (!$message) {
 <head>
     <meta charset="UTF-8">
     <title>✏️ Редактировать сообщение</title>
-    <link rel="stylesheet" href="edit_style.css">
+    <link rel="stylesheet" href="Styles/edit_style.css">
 </head>
 
 <body>

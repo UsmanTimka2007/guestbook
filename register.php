@@ -46,7 +46,7 @@ if ($_POST) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="register_style.css">
+    <link rel="stylesheet" href="Styles/register_style.css">
     <title>📝 Регистрация</title>
 </head>
 <body>

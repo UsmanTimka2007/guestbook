@@ -37,7 +37,7 @@ if ($_POST) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="login_style.css">
+    <link rel="stylesheet" href="Styles/login_style.css">
     <title>Вход</title>
 </head>
 <body>
