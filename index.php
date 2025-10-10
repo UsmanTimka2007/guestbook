@@ -85,5 +85,13 @@ $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php endif; ?>
 
     </div>
+<?php if (isset($_SESSION['flash_success'])):?>
+      <div class="flash">
+          <?php echo $_SESSION['flash_success'];
+          unset($_SESSION['flash_success']);?>
+      </div>
+<?php endif;?>
 </body>
+
+<script src="./Scripts/Flash.js"></script>
 </html>
