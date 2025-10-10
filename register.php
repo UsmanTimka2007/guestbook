@@ -46,40 +46,8 @@ if ($_POST) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="register_style.css">
     <title>📝 Регистрация</title>
-    <style>
-        body { font-family: Arial; background: #f0f0f0; padding: 50px; }
-        .form-container {
-            max-width: 400px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h2 { text-align: center; }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        button {
-            width: 100%;
-            padding: 12px;
-            background: #28a745;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover { background: #218838; }
-        .error { background: #f8d7da; color: #721c24; padding: 10px; border-radius: 4px; margin: 15px 0; }
-        .success { background: #d4edda; color: #155724; padding: 10px; border-radius: 4px; margin: 15px 0; }
-        .login-link { text-align: center; margin-top: 20px; }
-        .login-link a { color: #007BFF; text-decoration: none; }
-    </style>
 </head>
 <body>
     <div class="form-container">
