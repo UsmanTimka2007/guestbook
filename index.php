@@ -1,6 +1,8 @@
 <!-- index.php -->
 <?php
 require_once 'config.php';
+require_once 'passwords.php';
+
 
 // Получаем все сообщения с именем автора
 $stmt = $pdo->query("
@@ -29,7 +31,7 @@ $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <?php if (isAdmin()): ?>
                     <span class="admin-tag">АДМИН</span>
                 <?php endif; ?>
-                <a href="logout.php"> Выйти</a>
+                <form method="POST" action="logout.php"><button type="submit"> Выйти</button></form>
             <?php else: ?>
                 <a href="login.php">Войти</a>
                 <a href="register.php"> Регистрация</a>
